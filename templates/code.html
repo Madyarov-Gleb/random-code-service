@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Случайный четырёхзначный код">
+    <title>Ваш код · Генератор кода</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main class="container result" aria-labelledby="page-title">
+      <h1 id="page-title">Ваш код</h1>
+      <output class="generated-code" data-testid="generated-code" aria-label="Четырёхзначный код">{{ code }}</output>
+      <p>Обновите страницу, чтобы выйти.</p>
+      <a href="{{ url_for('login') }}">Вернуться</a>
+    </main>
+  </body>
+</html>

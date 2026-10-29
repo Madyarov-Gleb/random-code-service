@@ -1,0 +1,10 @@
+.venv/
+.env
+.superpowers/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
+

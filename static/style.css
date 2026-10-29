@@ -1,0 +1,117 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  width: min(100% - 40px, 360px);
+  padding: 40px 0;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.credentials {
+  margin-bottom: 32px;
+  font-size: 0.9rem;
+}
+
+.alert {
+  font-weight: 700;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+input,
+button {
+  min-height: 44px;
+  border: 1px solid #000;
+  border-radius: 0;
+  font: inherit;
+}
+
+input {
+  padding: 8px 10px;
+  background: #fff;
+  color: #000;
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+}
+
+.note {
+  margin-top: 24px;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.result {
+  text-align: center;
+}
+
+.generated-code {
+  display: block;
+  margin: 32px 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(3.5rem, 16vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+}
+
+a {
+  color: #000;
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 32px, 360px);
+    padding: 24px 0;
+  }
+}
